@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--https://dribbble.com/shots/3714661-Calendar-Widget-->
+    <calendar-widget/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CalendarWidget from '@/components/CalendarWidget';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    CalendarWidget
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+  margin:0px;
+  padding:0px;
+  background-color: #FD9057;
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 </style>
